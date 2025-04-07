@@ -1,49 +1,43 @@
-"use client";
+"use client"
 
-import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-import { useSectionInView } from "@/lib/hooks";
+import React, { useEffect } from 'react'
+import SectionHeading from './section-heading'
+import { motion } from "framer-motion"
+import { useSectionInView } from "@/lib/hooks"
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+ const { ref } = useSectionInView('About',);
 
-  return (
-    <motion.section
-      ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.175 }}
-      id="about"
-    >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-      </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
-      </p>
-    </motion.section>
-  );
+  return( 
+  <motion.section ref={ref} className='mb-28 max-w-[45rem] text-center 
+  leading-8 sm:mb-40 scroll-mt-28'
+  initial={{ opacity: 0, y: 100 }}
+  animate={{ opacity: 1, y: 0 }} //optional animate?
+  transition={{ delay: 0.175 }}
+  id = "about"
+  >
+    <SectionHeading>About me</SectionHeading>
+    <p className="mb-3"> I'm a 
+      <span className="font-medium"> Computer Science</span> student with a passion for building efficient systems. 
+      Currently working as a Research Assistant in a <span className="font-medium">Flask/React/Java</span> video analytics project, 
+      which involves <span className="font-medium"> modifying hash tables and data structures</span> to ensure seamless data flow between the client and server. 
+      I collaborate on integrating these changes with the frontend, ensuring <span className="italic"> proper API responses and maintaining consistency</span>. 
+      I particularly enjoy coding in 
+      <span className="font-medium"> Java and Python
+      </span> as well as <span className="font-medium"> crafting responsive frontends</span>.
+    </p>
+    <p className="mb-3"> My technical sweet spot includes <span className="font-medium">full-stack development</span> and 
+    <span className="font-medium"> performance optimization:  
+    </span> whether it be reducing bugs and errors by rigorous testing or improving my portfolio using <span className="font-medium">Next.js</span>.
+     Additionally, I have experience in troubleshooting issues related to <span className="font-medium"> data handling</span>, optimizing server-side logic in a 
+     <span className="font-medium"> Biomedical Research Project</span>.
+    </p>
+    
+  </motion.section>
+  )
 }
+/**<p>
+    I have great <span className="italic">interpersonal and communication skills</span> having worked in 
+    a multitude of diverse teams for classes, research, competitions and more. I am genuinely passionate about {" "}
+    <span className="font-medium">programming and teamwork</span>, so I hope we can connect and contribute to something great!
+    </p> */

@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import { LuLaptop } from "react-icons/lu";
+import { LuGamepad2 } from "react-icons/lu";
+import rmtdevImg  from "@/public/Parryform.png"; 
+import corpcommentImg from "@/public/Schedulind.png";
+import wordanalyticsImg from "@/public/Mavstream.png";
 
 export const links = [
   {
@@ -35,73 +36,75 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Tech Lead",
+    location: "Arlington, TX",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
+      "I worked at the central library as IT support. Hosted coding workshops on C++ and Python.",
+    icon: React.createElement(LuLaptop),
+    date: "2023",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Biomedical Research Assistant",
+    location: "Fort Worth, TX",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "Contributed to a rehab-focused project, assisting in data analysis, UI/UX and database management.",
+    icon: React.createElement(LuGamepad2),
+    date: "2024",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Research Assistant",
+    location: "Arlington, TX",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "I'm working as a full-stack developer on a video analytics research project, optimizing a Java-based backend with a React frontend.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2025",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "MavVStream",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "The goal of this project is to easily extract information from videos so that users can analyze and interact with data.", 
+    tags: ["React", "Java", "Flask", "Eclipse IDE", "XML"],
+    imageUrl: wordanalyticsImg,
   },
   {
-    title: "rmtDev",
+    title: "ParryForm",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Worked in an Agile 3-person team in a month as AI writer and animation dev on a 2D-game in Unity, compatible with Android.",
+      //Made in an Agile 3-person team in a month, it has features like smart enemy behavior, selectable graphics, easy modding.",
+    tags: ["Unity", "Python", "Git", "Android Studio"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Schedulink",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "A lottery-based process scheduler. It assigns and inherits process attributes such as tickets and color identifiers, integrating ticket-based CPU allocation.",
+    tags: ["C", "Linux Kernel", "PowerShell", "Bash"],
+    imageUrl: corpcommentImg,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
+  "Python",
+  "Java",
   "TypeScript",
   "React",
   "Next.js",
+  "JavaScript",
   "Node.js",
   "Git",
   "Tailwind",
-  "Prisma",
+  "Matlab",
   "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
+  "Selenium",
+  "VBA",
+  "Power BI",
+  "Tableau",
   "Express",
-  "PostgreSQL",
-  "Python",
+  "Flask",
+  "NoSQL",
   "Django",
   "Framer Motion",
 ] as const;
