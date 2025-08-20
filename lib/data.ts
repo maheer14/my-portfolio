@@ -37,7 +37,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Sysytem Administrator",
+    title: "System Administrator",
     location: "Arlington, TX",
     description:
       "I worked at the central library as IT support. Hosted coding workshops on C++ and Python.",
