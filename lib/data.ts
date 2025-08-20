@@ -6,6 +6,7 @@ import { LuGamepad2 } from "react-icons/lu";
 import rmtdevImg  from "@/public/Parryform.png"; 
 import corpcommentImg from "@/public/Schedulind.png";
 import wordanalyticsImg from "@/public/Mavstream.png";
+import filtertrackImg from "@/public/Kalmantrack.png";
 
 export const links = [
   {
@@ -36,7 +37,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Tech Lead",
+    title: "Sysytem Administrator",
     location: "Arlington, TX",
     description:
       "I worked at the central library as IT support. Hosted coding workshops on C++ and Python.",
@@ -62,6 +63,13 @@ export const experiencesData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "KalmanTrack",
+    description:
+      "Built a real-time vehicle tracking using Kalman filters (Python/OpenCV) and a custom CNN (TensorFlow).", 
+    tags: ["OpenCV", "TensorFlow", "scikit-learn", "Python", "NumPy"],
+    imageUrl: filtertrackImg,
+  },
   {
     title: "MavVStream",
     description:
@@ -95,6 +103,8 @@ export const skillsData = [
   "JavaScript",
   "Node.js",
   "Git",
+  "Docker",
+  "Kubernetes",
   "Tailwind",
   "Matlab",
   "MongoDB",
@@ -105,6 +115,8 @@ export const skillsData = [
   "Express",
   "Flask",
   "NoSQL",
-  "Django",
+  "AWS",
+  "Google Cloud Platform",
+  "Azure",
   "Framer Motion",
 ] as const;
